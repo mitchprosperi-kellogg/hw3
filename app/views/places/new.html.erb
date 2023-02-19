@@ -1,12 +1,12 @@
 h1>New Post</h1>
 
-<%= form_with :model => @post do |form| %>
+<%= form_with :model => @place do |form| %>
   <p>
     <%= form.label "title" %>
     <%= form.text_field "title" %>
   </p>
 
- <p>
+  <p>
     <%= form.label "description" %>
     <%= form.text_field "description" %>
   </p>
@@ -15,6 +15,8 @@ h1>New Post</h1>
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %> 
   </p>
+
+ 
 
   <p><%= form.submit %></p>
 <% end %>
