@@ -9,7 +9,7 @@ class PlacesController < ApplicationController
     
       def create
         @place = Place.new
-        @post["title"] = params["post"]["title"]
+        @post["name"] = params["post"]["name"]
         @post.save
         redirect_to "/posts"
       end
