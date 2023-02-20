@@ -2,9 +2,9 @@
   <p> Places <p>
   <% for place in @places %>
     <div class="col-3">
-      <h4><%= place["title"] %></h4>
+      <h4><%= place["name"] %></h4>
 
-     <p><a href="/places/<%=place["id"]%>"><%place["name"]%></a></p>
+     <p><a href="/places/<%=place["id"]%>"><%=place["name"]%></a></p>
     </div>
   <% end %>
   <p><a href="/places/new">New Place</a></p>

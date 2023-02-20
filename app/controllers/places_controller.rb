@@ -9,11 +9,7 @@ class PlacesController < ApplicationController
 
       def show
         @place = Place.find_by({"id" => params["id"]})
-        @post = Post.where({ "post_id" => @post["id"] })
-      end
-    
-      def edit
-      @place = Place.find_by ({"id" => params["id"]})
+        @post = Post.where({"post_id" => @post["id"]})
       end
 
       def create
