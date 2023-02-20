@@ -5,14 +5,14 @@
 
 <ul>
   <% for post in @posts %>
-    <<%= post["title"] %>, 
-    <%= post["description"] %>
-    <%= post["posted_on"] %>
+    <p><%= post["title"] %></p> 
+   <p> <%= post["description"] %> </p>
+   <p> <%= post["posted_on"] %> </p>
   <% end %>
 </ul>
 
 <p>
-  <a href="/places/new?place_id=<%= @place["id"] %>">New Place</a>
+  <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
 </p>
 
 <p><a href="/places">Back to All Places</a></p>
